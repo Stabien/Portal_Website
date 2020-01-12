@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Poppins-light';
+    src: url('font/Poppins-light.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('font/Poppins-medium.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background: #313131;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+#login {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	border: 2px solid #00ccff;
+	padding: 40px 50px;
+	padding-top: 20px;
+	border-radius: 30px;
+}
+
+#login h1 {
+	text-align: center;
+	margin-bottom: 30px;
+	font-family: 'poppins';
+	color: white;
+	letter-spacing: 2px;
+}
+
+#login label {
+	font-family: 'poppins';
+	color: white;
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+#login p {
+	display: none;
+	color: red;
+	font-family: 'Poppins-light';
+	text-align: center;
+	font-size: 14px;
+	margin-top: -20px;
+}
+
+#login span {
+	color: red;
+	font-family: 'Poppins-light';
+	text-align: center;
+	font-size: 14px;
+	margin-top: -20px;
+	margin-bottom: 10px;
+}
+
+#login a {
+	color: yellow;
+	font-family: 'Poppins-light';
+	text-align: center;
+	font-size: 14px;
+	margin-top: 15px;
+	text-decoration: none;
+}
+.input {
+	border: none;
+	padding: 12px;
+	padding-left: 10px;
+	padding-right: 50px;
+	border-radius: 20px;
+	border: 2px solid #00ccff;
+	background: #262626;
+	color: white;
+	transition: 0.25s;
+	margin-top: 5px;
+	margin-bottom: 25px;
+}
+
+#submit {
+	border: none;
+	border-radius: 30px;
+	border: 2px solid yellow;
+	padding-left: 60px;
+	padding-right: 60px;
+	height: 45px;
+	margin: auto;
+	background: #393939;
+	text-align: center;
+	color: white;
+	transition: 0.25s;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+::placeholder {
+	color: #666666;
+	text-align: left;
+}
+
+.input:focus {
+	border-color: yellow;
+	padding: 12px;
+	padding-right: 60px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.input:focus ::placeholder {
+	display: none;
+}
+
+#submit:hover {
+	background: yellow;
+	color: white;
+	padding-left: 75px;
+	padding-right: 75px;
+}
